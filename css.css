@@ -3,7 +3,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: #9fc034 url('../images/body_bg.gif') repeat-x top;
+	background: rgb(214,230,164) url('../images/body_bg.gif') repeat-x top;
 	font-family: Helvetica, sans-serif;
 	font-size: 62.5%;
 	color: #333;
@@ -42,7 +42,8 @@ span.amp {
 	height: 70px;
 	width: 800px;
 	color: #fff;
-	background: url('../images/rounded_header.gif') no-repeat bottom;
+	background: #FEBA48 url('../images/rounded_header.gif') no-repeat bottom;
+
 }
 
 #masthead h1 {
@@ -50,7 +51,7 @@ span.amp {
 }
 
 #nav {
-	float: right;
+	float: left;
 	margin: 0 10px 0 0;
 	padding: 30px 0 0 0;
 	font-size: 1.4em;
@@ -67,14 +68,19 @@ span.amp {
 	background: none;
 }
 
+#nav .navbutton{
+	border-radius: 4px;
+	background: #9fc034;
+}
+
 #wrap {
 	clear: both;
 	margin: 0 auto;
 	padding: 10px;
-	width: 780px;
+	width: 880px;
 	background: #fff;
-	border: 10px solid #5c0505;
-	border-top: none;
+	/*border: 10px solid #5c0505;
+	border-top: none;*/
 }
 
 /*
@@ -82,9 +88,9 @@ The main image is a background image so that we can
 overlay the text that used to appear below the header/
 */
 #header {
-	height: 180px;
+	height: 120px;
 	background: url('../images/tokyo_updated.jpg') no-repeat;
-	border: 10px solid #eee;
+	border: 2px solid #eee;
 }
 
 #header h1 {
@@ -112,6 +118,12 @@ overlay the text that used to appear below the header/
 	margin: 0 0 10px 0;
 }
 
+#content img{
+	margin-left: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 #link-list {
 	margin: 20px 0 0 0;
 	font-size: 1.4em;
@@ -126,8 +138,8 @@ overlay the text that used to appear below the header/
 	margin: 20px 0 20px 0;
 	padding: 10px;
 	width: 240px;
-	background: #eee;
-	border-top: 5px solid #ddd;
+	background: #9fc034;
+	border-top: 5px solid #FEBA48;
 }
 
 #sidebar h2 {
@@ -144,11 +156,13 @@ overlay the text that used to appear below the header/
 	border: 5px solid #ddd;	
 }
 
+
 #footer {
 	clear: both;
-	background: #eee;
+	background: #9fc034;
 	padding: 10px;
-	border-top: 2px solid #ddd;
+	border-top: 5px solid #FEBA48;
 	text-align: center;
 	color: #777;
 }
+
