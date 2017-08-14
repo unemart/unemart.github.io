@@ -1,0 +1,66 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>UneMart home</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="css.css" type="text/css" media="screen" />
+</head>
+<body>
+    <div id="masthead">
+        <h1><img alt="UneMart logo" src="logo.png" height="50" width="50" /></h1>
+        <ul id="nav">
+            <li><a class="active" title="unemart home" href="index.html"><input type="button" value="Home" class="navbutton"></a></li>
+            <li><a title="Design services" href="services.html"><input type="button" value="Who We Are" class="navbutton"></a></li>
+            <li><a title="Contact unemart" href="contact.html"><input type="button" value="Contact Us" class="navbutton"></a></li>
+        </ul>
+    </div>
+
+    <div id="wrap">
+    
+        <div id="content">
+            <h1>UNEMART</h1>
+
+             <div id="imageslider">
+                <img class="slider" height="300" width="168" src="unemart1.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart2.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart3.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart4.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart5.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart6.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart7.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart8.png" alt="UNEMART">
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slider");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 5000); // Change image every 2 seconds
+                }
+            </script>
+            
+        </div>
+        <div id="sidebar">
+            <h2>Find us on</h2>
+            <ul id="port">
+                <li><a title="View Detail" href="https://www.facebook.com/unemart/https://www.facebook.com/unemart/" ><img alt="facebook" src="fb.png" width="20" height="20"/></a></li>
+                <li><a title="View Detail" href=""><img alt="twitter" src="twitter.jpg" width="20" height="20"/></a></li>
+                <li><a title="View Detail" href="" ><img alt="google plus" src="googleplus.png" width="20" height="20" /></a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; unemart 2017, all rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>   
