@@ -5,23 +5,54 @@
     <title>UneMart home</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" href="css.css" type="text/css" media="screen" />
+    <style>
+        .slider {display:none;}
+    </style>
 	
 </head>
 <body>
     <div id="masthead">
-        <h1><img alt="unemart logo" src="images/rl_logo_updated.png" /></h1>
+        <h1><img alt="UneMart logo" src="logo.png" height="50" width="50" /></h1>
         <ul id="nav">
-            <li><a class="active" title="unemart home" href="index.html">Home</a></li>
-            <li><a title="Design services" href="services.html">who arebwe</a></li>
-            <li><a title="Contact unemart" href="contact.html">Contact us</a></li>
+            <li><a class="active" title="unemart home" href="index.html"><input type="button" value="Home" class="navbutton"></a></li>
+            <li><a title="Design services" href="services.html"><input type="button" value="Who We Are" class="navbutton"></a></li>
+            <li><a title="Contact unemart" href="contact.html"><input type="button" value="Contact Us" class="navbutton"></a></li>
         </ul>
     </div>
+
     <div id="wrap">
-        <div id="header">
-            <h1><strong>unemart</strong> is the next business platform<span class="amp">&amp;</span>with the best user experiences for mobile.</h1>
-        </div>
+        <!--<div id="header">
+            <h1><strong>UneMart</strong> is the next business platform<span class="amp">&amp;</span>with the best user experiences for mobile.</h1>
+        </div>-->
         <div id="content">
             <h2>Welcome to the New unemart mobile platform</h2>
+            <div id="imageslider">
+                <img class="slider" height="300" width="168" src="unemart1.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart2.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart3.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart4.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart5.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart6.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart7.png" alt="UNEMART">
+                <img class="slider" height="300" width="168" src="unemart8.png" alt="UNEMART">
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slider");
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 5000); // Change image every 2 seconds
+                }
+            </script>
             <p>UneMart is a mobile platform for all sellers with any form or size to put their business online to a global audience of buyers. </p>
             <p>UneMart utilizes maps and location base technology to be able to pinpoint the location of any product or service that a buyer searches. </p>
             <ul id="link-list">
@@ -31,9 +62,9 @@
         <div id="sidebar">
             <h2>Find us on</h2>
             <ul id="port">
-                <li><a title="View Detail" href="" ><img alt="facebook" src="fb.png" width="20" height="20"/>Facebook</a></li>
-                <li><a title="View Detail" href=""><img alt="twitter" src="twitter.jpg" width="20" height="20"/>Twitter</a></li>
-                <li><a title="View Detail" href="" ><img alt="google plus" src="googleplus.png" width="20" height="20" />Google + </a></li>
+                <li><a title="View Detail" href="" ><img alt="facebook" src="fb.png" width="20" height="20"/></a></li>
+                <li><a title="View Detail" href=""><img alt="twitter" src="twitter.jpg" width="20" height="20"/></a></li>
+                <li><a title="View Detail" href="" ><img alt="google plus" src="googleplus.png" width="20" height="20" /></a></li>
             </ul>
         </div>
         <div id="footer">
@@ -42,3 +73,5 @@
     </div>
 </body>
 </html>   
+
+
